@@ -2,13 +2,13 @@
 .id {
     margin-left: auto; 
     margin-right: -200px;
-    background-color: #ad1e1e;
+    background-image: radial-gradient( circle 650px at 4.9% 7.9%,  rgba(218,0,0,1) 14.1%, rgba(168,2,144,1) 65%, rgba(102,2,110,1) 90% );
     overflow: hidden;
     width: 500px;
     height: 20%;
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     align-content: center;
     /*border on the top,left,bottom side*/
     border-top: 2px solid #500d0d;
@@ -16,25 +16,25 @@
     border-bottom: 2px solid #500d0d;
     border-radius: 30px 0px 0px 30px;
     transition: all 0.3s ease-in-out;
-
 }
 
 /*on hover id, move it to the left*/
 .id:hover {
     /*move it to the left*/
-    margin-right: -125px;
+    margin-right: -80px;
     color: white;
     transition: all 0.3s ease-in-out;
 }
 
 /* center h1 in id */
-.id h1 {
+.id h1{
     text-align: left;
-    margin-left: 75px;
+    margin-left: 45px;
     font-size: 30px;
     font-family:"Georgia";
     padding: 10px;
 }
+
 
 /*put background color to the body */
 body {
@@ -44,6 +44,11 @@ body {
     background-color: #e89261;
     background-image: linear-gradient(62deg, #e89261 0%, #F7CE68 100%);
 
+}
+
+img{
+    width: 50px;
+    height: 50px;
 }
 
 /*make the div informations on the left and width = 200px */
@@ -69,8 +74,6 @@ body {
 /*all images in informations are 50x50 px*/
 .informations img{
     margin-left: 10px;
-    width: 50px;
-    height: 50px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -89,19 +92,19 @@ body {
     background-color: #ad1e1e;
     color: white;
     transition: all 0.2s ease-in-out;
-    /*change images to white*/
 }
 
 .informations:hover img {
     filter: invert(100%);
     transition: all 0.2s ease-in-out;
+    /*underline the text*/
 }
 
 /* center the menu in the body */
 .menu {
     position: absolute;
     /*center the menu in the body */
-    top: 55%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);   
     width: 700px;
@@ -110,58 +113,117 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* put the menu on the middle of the screen between informations and id */
-.menu ul{
-    height: 100%;
+.menu .menu-item-buttons ul{
+    height: 50%;
     display: grid;
     /*grid has two columns*/
     grid-template-columns: 0.5fr 0.5fr;
     /*grid has four rows*/
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 100%;
     /*center it in the menu*/
     margin-left: -7%;
+    margin-bottom: 100px;
 }
 
 /* each a in menu has a box with background color */
-.menu a {
-    background-color: #dc4416;
+.menu .menu-item-buttons a {
     text-decoration: none;
     color: white;
     padding: 20px;
     font-size: 25px;
     font-family:"Georgia";
-    width: 200px;
-    height:50px;
-    margin-top: 100px;
-    margin-bottom: 10px;
+    height: 50px;
     border-radius: 5px;
     /*center the text in the box */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #6b3407;
-    transition: all 0.2s ease;
-    /*add little shadow to the box */
-    box-shadow: 0px 0px 5px #6b3407;
 
 }
 
-/*on hover the box change color and scale it */
-.menu a:hover {
-    transform: scale(1.1);
-    /*add ease animation */
-    transition: all 0.2s ease;
-    /*change the shadow */
-    box-shadow: 0px 0px 10px #6b3407;
-    /*add border to the box */
-    border: 2px solid #500d0d;
-    /*make feed back that the box is clickable */
-    cursor: pointer;
 
+.btn-grad{background-image: linear-gradient(to right, #D31027 0%, #ee465a  51%, #D31027  100%)}
+.btn-grad {
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 5px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+.competences{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu img{
+    width: 75px;
+    height: 75px;
+}
+
+.competences h1{
+    font-family: "Georgia";
+    margin-bottom: 40px;
+}
+
+.loisirs{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loisirs h1{
+    font-family: "Georgia";
+    margin-bottom: 40px;
+}
+
+
+
+.hover_image{
+    margin-left:20px;
 
 }
+
+.hover_image:hover {
+    text-decoration: none
+}
+.hide {
+    display:none
+}
+.hover_image:hover img:first-child{display:none}
+.hover_image:hover img:last-child{display:inline-block}
 
 
 

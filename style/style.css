@@ -109,7 +109,7 @@ img{
 /* center the menu in the body */
 .menu {
     position: absolute;
-    top: 100%;
+    top: 155%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 800px;
@@ -148,27 +148,47 @@ img{
    text-decoration: none;
  }
 
-.experiences{
+.title{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experience{
     margin-top: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.experiences li:not(:first-child){
+.experience li:not(:first-child){
     border-top: 2px solid #000;
 }
 
 
-.formations{
+.formation{
     margin-top: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.formations li:not(:first-child){
+.formation li:not(:first-child){
     border-top: 2px solid #000;
+}
+
+.skill {
+    background-color: #000;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
 }
 
 .competences{
@@ -178,11 +198,94 @@ img{
     flex-direction: column;
 }
 
+.competences .icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.competences .icons p{
+    /*center the text*/
+    text-align: center;
+}
+
+.competences-perso{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.container span{
+    font-size: 18px;
+    margin-right: 10%;
+    /*center vertically the text*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.html {
+    width: 80%;
+}
+
+.css{
+    width: 80%;
+}
+
+.js{
+    width: 60%;
+}
+
+.python{
+    width: 80%;
+}
+
+.java{
+    width: 70%;
+}
+
+.c{
+    width: 55%;
+}
+
+.git{
+    width: 60%;
+}
+
+.github{
+    width: 60%;
+}
+
+.fr{
+    width: 100%;
+}
+
+.en{
+    width: 70%;
+}
+
 .langues{
     margin-top: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.langues .icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .loisirs{
@@ -194,6 +297,17 @@ img{
     /*adding margin bottom to the last item*/
     margin-bottom: 10px;
 
+}
+
+.loisirs .icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.loisirs .icons p{
+    /*put the text on the left*/
+    text-align: left;
 }
 
 .icons{
@@ -217,7 +331,7 @@ img{
     display:none
 }
 .hover_image:hover img:first-child{display:none}
-.hover_image:hover img:last-child{display:inline-block}
+.hover_image:hover img:nth-child(2){display:inline-block}
 
 
 

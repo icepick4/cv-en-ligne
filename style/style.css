@@ -1,7 +1,15 @@
+@font-face {
+    font-family: "Gitaluevo";
+    src: url('../assets/font/PaytoneOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* set the container on top right with background color */
 .id {
     margin-left: auto; 
-    margin-right: -200px;
+    margin-right: -220px;
     background-image: radial-gradient( circle 650px at 4.9% 7.9%,  rgba(218,0,0,1) 14.1%, rgba(168,2,144,1) 65%, rgba(102,2,110,1) 90% );
     overflow: hidden;
     width: 500px;
@@ -31,7 +39,6 @@
     text-align: left;
     margin-left: 45px;
     font-size: 30px;
-    font-family:"Georgia";
     padding: 10px;
 }
 
@@ -39,10 +46,10 @@
 /*put background color to the body */
 body {
     /*disable scrollbar*/
-    overflow-y: hidden;
     overflow-x: hidden;
     background-color: #e89261;
     background-image: linear-gradient(62deg, #e89261 0%, #F7CE68 100%);
+    font-family: "Gitaluevo";
 
 }
 
@@ -54,8 +61,7 @@ img{
 /*make the div informations on the left and width = 200px */
 .informations {
     float: left;
-    /*make the width growing with the content */
-    background-color: #ad1e1e;
+    background-image: linear-gradient(to right, #D31027,#ee465a);
     height: 25%;
     display: grid;
     /*grid has two columns*/
@@ -81,7 +87,7 @@ img{
 .informations p {
     text-align: right;
     font-size: 20px;
-    font-family:"Georgia";
+    ;
     margin-right: 10px;
     margin-top: 13px;
 
@@ -103,48 +109,26 @@ img{
 /* center the menu in the body */
 .menu {
     position: absolute;
-    /*center the menu in the body */
-    top: 0%;
+    top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);   
-    width: 700px;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height : 90%;
     /*make separations between the menu items*/
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* put the menu on the middle of the screen between informations and id */
-.menu .menu-item-buttons ul{
-    height: 50%;
-    display: grid;
-    /*grid has two columns*/
-    grid-template-columns: 0.5fr 0.5fr;
-    /*grid has four rows*/
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    margin-top: 100%;
-    /*center it in the menu*/
-    margin-left: -7%;
-    margin-bottom: 100px;
-}
-
-/* each a in menu has a box with background color */
-.menu .menu-item-buttons a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-size: 25px;
-    font-family:"Georgia";
-    height: 50px;
-    border-radius: 5px;
-    /*center the text in the box */
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    flex-direction: column;
 }
 
+.menu img{
+    width: 75px;
+    height: 75px;
+}
+
+.menu h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
 
 .btn-grad{background-image: linear-gradient(to right, #D31027 0%, #ee465a  51%, #D31027  100%)}
 .btn-grad {
@@ -164,56 +148,66 @@ img{
    text-decoration: none;
  }
 
+.experiences{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experiences li:not(:first-child){
+    border-top: 2px solid #000;
+}
+
+
+.formations{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formations li:not(:first-child){
+    border-top: 2px solid #000;
+}
 
 .competences{
-    position: absolute;
-    top: 68%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: auto;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
 }
 
-.menu img{
-    width: 75px;
-    height: 75px;
-}
-
-.competences h1{
-    font-family: "Georgia";
-    margin-bottom: 40px;
+.langues{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .loisirs{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    /*adding margin bottom to the last item*/
+    margin-bottom: 10px;
+
 }
 
-.loisirs h1{
-    font-family: "Georgia";
-    margin-bottom: 40px;
+.icons{
+    margin-bottom: 5%;
 }
+
+
+
+
 
 
 
 .hover_image{
     margin-left:20px;
-
 }
 
 .hover_image:hover {

@@ -6,40 +6,19 @@
 }
 
 
+
 /* set the container on top right with background color */
 .id {
-    margin-left: auto; 
-    margin-right: -220px;
-    background-image: radial-gradient( circle 650px at 4.9% 7.9%,  rgba(218,0,0,1) 14.1%, rgba(168,2,144,1) 65%, rgba(102,2,110,1) 90% );
-    overflow: hidden;
     width: 500px;
     height: 20%;
     margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
-    /*border on the top,left,bottom side*/
-    border-top: 2px solid #500d0d;
-    border-left: 2px solid #500d0d;
-    border-bottom: 2px solid #500d0d;
-    border-radius: 30px 0px 0px 30px;
-    transition: all 0.3s ease-in-out;
-}
-
-/*on hover id, move it to the left*/
-.id:hover {
-    /*move it to the left*/
-    margin-right: -80px;
-    color: white;
-    transition: all 0.3s ease-in-out;
 }
 
 /* center h1 in id */
 .id h1{
     text-align: left;
-    margin-left: 45px;
-    font-size: 30px;
-    padding: 10px;
+    margin-right: 30px;
+    font-size: 2.5vw;
 }
 
 
@@ -49,7 +28,6 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: #e89261;
-    background-image: linear-gradient(62deg, #e89261 0%, #F7CE68 100%);
     font-family: "Gitaluevo";
     padding: 0;
 }
@@ -61,7 +39,12 @@ img{
 
 /*make the div informations on the left and width = 200px */
 .informations {
-    float: left;
+    width: 25vw;
+    /*putting this div on the top right corner*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    
     background-image: linear-gradient(to right, #D31027,#ee465a);
     height: 25%;
     display: grid;
@@ -70,50 +53,35 @@ img{
     /*grid has four rows*/
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: space-between;
-    position: absolute;
-    top: 0;
     margin-top: 10px;
+    margin-right: 10px;
     border-radius: 10px;
     border: 2px solid #500d0d;
     transition: all 0.2s ease-in-out;
 }
 
-/*all images in informations are 50x50 px*/
 .informations img{
     margin-left: 10px;
-    transition: all 0.2s ease-in-out;
 }
 
 /*texts are center with images */
 .informations p {
     text-align: right;
-    font-size: 20px;
+    font-size: 1.5vw;
     ;
     margin-right: 10px;
     margin-top: 13px;
 
 }
 
-/* on hover informations hightlight all text in it */
-.informations:hover {
-    background-color: #ad1e1e;
-    color: white;
-    transition: all 0.2s ease-in-out;
-}
-
-.informations:hover img {
-    filter: invert(100%);
-    transition: all 0.2s ease-in-out;
-    /*underline the text*/
-}
-
 /* center the menu in the body */
 .menu {
-    position: absolute;
-    top: 155%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
+    position: relative;
+    margin-top: 225px;
+    /*center the menu*/
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 1250px;
     height : 90%;
     /*make separations between the menu items*/
     display: flex;
@@ -122,39 +90,40 @@ img{
 }
 
 .menu img{
-    width: 75px;
-    height: 75px;
+    width: 6vw;
+    height: 6vw;
 }
 
 .menu h1{
-    font-size: 30px;
+    font-size: 4vw;
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.menu h3{
+    font-size:2vw;
+}
+
+.menu p{
+    font-size: 1.4vw;
     margin-top: 10px;
 }
 
-.btn-grad{background-image: linear-gradient(to right, #D31027 0%, #ee465a  51%, #D31027  100%)}
-.btn-grad {
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 5px #eee;
-   border-radius: 10px;
-   display: block;
- }
-
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
+.menu .competences-perso p{
+    font-size: 1.7vw;
+}
 
 .title{
     position: absolute;
     top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 2.5vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -188,7 +157,6 @@ img{
     color: white;
     padding: 1%;
     text-align: right;
-    font-size: 20px;
     border-radius: 15px;
 }
 
@@ -203,7 +171,6 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-
 }
 
 .competences .icons p{
@@ -226,7 +193,7 @@ img{
 }
 
 .container span{
-    font-size: 18px;
+    font-size: 1.3vw;
     margin-right: 10%;
     /*center vertically the text*/
     display: flex;
@@ -325,8 +292,17 @@ img{
 }
 
 
-
-
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 .hover_image{
@@ -346,4 +322,107 @@ img{
 
 
 
+/*adapting font size and img size to the screen size*/
+@media screen and (max-width: 1000px) {
+    /*put the .title on the top right corner*/
+    .title{
+        /*putting it on top right corner*/
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-5%, -20%);
 
+        font-size: 3vw;
+    }
+
+    .id h1{
+        font-size: 4vw;
+        /*putting it on top left corner*/
+        top: 0;
+        left: 0;
+        transform: translate(0%, -20%);
+
+    }
+    .informations p{
+        font-size: 3vw;
+    }
+    .informations{
+        width: 35%;
+        height: 20%;
+        background: none;
+        border: none;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        /*put the div in the middle of the screen*/
+        margin-top: 30%;
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .informations img{
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+
+    .menu{
+        margin-top: -15%;
+        /*center the menu*/
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
+
+    }
+
+    .menu img{
+        width: 11vw;
+        height: 11vw;
+    }
+    .menu h1{
+        font-size: 6.5vw;
+    }
+    .menu h3{
+        font-size:2.5vw;
+    }
+    
+    .menu p{
+        font-size: 2vw;
+        margin-top: 10px;
+    }
+
+    .menu .competences-perso p{
+        font-size: 2.2vw;
+    }
+
+    .container span{
+        font-size: 2vw;
+    }
+
+    .competences .icons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 35px;
+        justify-items: center;
+    }
+
+    .competences-perso li{
+        font-size: 18px;
+    }
+    .langues .icons{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .langues .icons a{
+        font-size: 18px;
+    }
+    .loisirs .icons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .loisirs .icons a{
+        font-size: 18px;
+    }
+
+    .hover_image img:nth-child(2){display:inline-block}
+
+    .hover_image img:first-child{display:none}
+}

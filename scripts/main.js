@@ -19,7 +19,6 @@ function getPixelColor(img) {
     var ctx = canvas.getContext('2d');
     ctx.drawImage(img, 0, 0);
     img.crossOrigin = "Anonymous";
-    //while pixel == 0,0,0 change x and y
     var pixel;
     //browse pixels in the image until a non-transparent pixel is found
     for (var x = 0; x < img.width; x++) {

@@ -5,16 +5,12 @@
     font-style: normal;
 }
 
-
-
-/* set the container on top right with background color */
 .id {
     width: 500px;
     height: 20%;
     margin-top: 10px;
 }
 
-/* center h1 in id */
 .id h1{
     text-align: left;
     margin-right: 30px;
@@ -22,9 +18,7 @@
 }
 
 
-/*put background color to the body */
 body {
-    /*disable scrollbar*/
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: #e89261;
@@ -37,7 +31,6 @@ img{
     height: 50px;
 }
 
-/*make the div informations on the left and width = 200px */
 .informations {
     width: 25vw;
     /*putting this div on the top right corner*/
@@ -64,7 +57,6 @@ img{
     margin-left: 10px;
 }
 
-/*texts are center with images */
 .informations p {
     text-align: right;
     font-size: 1.5vw;
@@ -202,7 +194,7 @@ img{
 
 }
 
-
+/*progress bars*/
 .html {
     width: 80%;
 }
@@ -243,6 +235,7 @@ img{
     width: 70%;
 }
 
+
 .langues{
     margin-top: auto;
     display: flex;
@@ -268,9 +261,7 @@ img{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /*adding margin bottom to the last item*/
     margin-bottom: 10px;
-
 }
 
 .loisirs .icons{
@@ -291,20 +282,6 @@ img{
     margin-bottom: 5%;
 }
 
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
 .hover_image{
     margin-left:20px;
 }
@@ -324,7 +301,7 @@ img{
 
 /*adapting font size and img size to the screen size*/
 @media screen and (max-width: 1000px) {
-    /*put the .title on the top right corner*/
+
     .title{
         /*putting it on top right corner*/
         position: absolute;
@@ -342,9 +319,11 @@ img{
         transform: translate(0%, -20%);
 
     }
+
     .informations p{
         font-size: 4.5vw;
     }
+
     .informations{
         width: 45%;
         height: 20%;
@@ -359,6 +338,7 @@ img{
         margin-left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .informations img{
         width: 7vw;
         height: 7vw;
@@ -375,9 +355,11 @@ img{
         width: 11vw;
         height: 11vw;
     }
+
     .menu h1{
         font-size: 6vw;
     }
+
     .menu .experience h3{
         font-size:2.5vw;
     }
@@ -422,9 +404,6 @@ img{
         justify-items: center;
     }
 
-
-
     .hover_image img:nth-child(2){display:inline-block}
-
     .hover_image img:first-child{display:none}
 }

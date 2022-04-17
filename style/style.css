@@ -47,10 +47,11 @@
 body {
     /*disable scrollbar*/
     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: #e89261;
     background-image: linear-gradient(62deg, #e89261 0%, #F7CE68 100%);
     font-family: "Gitaluevo";
-
+    padding: 0;
 }
 
 img{
@@ -288,9 +289,15 @@ img{
     grid-template-rows: 1fr;
 }
 
+.langues .icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .loisirs{
     margin-top: auto;
-    margin-bottom: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -305,15 +312,17 @@ img{
     grid-template-rows: 1fr;
 }
 
-.loisirs .icons p{
-    /*put the text on the left*/
-    text-align: left;
+.loisirs .icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 
 .icons{
     margin-bottom: 5%;
 }
-
 
 
 
@@ -332,6 +341,7 @@ img{
 }
 .hover_image:hover img:first-child{display:none}
 .hover_image:hover img:nth-child(2){display:inline-block}
+.langues .hover_image:hover .skill{background-color: #D31027}
 
 
 

@@ -163,11 +163,19 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .competences .icons p{
     /*center the text*/
     text-align: center;
+}
+
+.competences .icons img{
+    /*center the image*/
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .competences-perso{
@@ -179,7 +187,7 @@ img{
 
 .container {
     background-color: rgb(192, 192, 192);
-    width: 100%;
+    width: 11vw;
     border-radius: 15px;
     margin: auto;
 }
@@ -307,7 +315,7 @@ img{
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(5%, -20%);
+        transform: translate(12%, -20%);
         font-size: 3vw;
     }
 

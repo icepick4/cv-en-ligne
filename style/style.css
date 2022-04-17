@@ -330,13 +330,12 @@ img{
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-5%, -20%);
-
+        transform: translate(5%, -20%);
         font-size: 3vw;
     }
 
     .id h1{
-        font-size: 4vw;
+        font-size: 5.5vw;
         /*putting it on top left corner*/
         top: 0;
         left: 0;
@@ -344,10 +343,10 @@ img{
 
     }
     .informations p{
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
     .informations{
-        width: 35%;
+        width: 45%;
         height: 20%;
         background: none;
         border: none;
@@ -356,21 +355,20 @@ img{
         flex-direction: column;
         align-items: center;
         /*put the div in the middle of the screen*/
-        margin-top: 30%;
+        margin-top: 40%;
         margin-left: 50%;
         transform: translate(-50%, -50%);
     }
     .informations img{
-        width: 5.5vw;
-        height: 5.5vw;
+        width: 7vw;
+        height: 7vw;
     }
 
     .menu{
-        margin-top: -15%;
+        margin-top: -20%;
         /*center the menu*/
         margin-left: 50%;
-        transform: translate(-50%, 0%);
-
+        transform: translate(-51%, 0%);
     }
 
     .menu img{
@@ -378,23 +376,32 @@ img{
         height: 11vw;
     }
     .menu h1{
-        font-size: 6.5vw;
+        font-size: 6vw;
     }
-    .menu h3{
+    .menu .experience h3{
         font-size:2.5vw;
     }
+
+    .menu .formation h3{
+        font-size:3vw;
+    }
     
-    .menu p{
-        font-size: 2vw;
+    .menu .experience p{
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+
+    .menu .formation p{
+        font-size: 2.6vw;
         margin-top: 10px;
     }
 
     .menu .competences-perso p{
-        font-size: 2.2vw;
+        font-size: 4vw;
     }
 
     .container span{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .competences .icons{
@@ -404,23 +411,18 @@ img{
         justify-items: center;
     }
 
-    .competences-perso li{
-        font-size: 18px;
+    .menu .icons p{
+        font-size: 3.5vw;
     }
-    .langues .icons{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    .langues .icons a{
-        font-size: 18px;
-    }
+
     .loisirs .icons{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 35px;
+        justify-items: center;
     }
-    .loisirs .icons a{
-        font-size: 18px;
-    }
+
+
 
     .hover_image img:nth-child(2){display:inline-block}
 

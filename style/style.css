@@ -9,6 +9,7 @@
     width: 500px;
     height: 20%;
     margin-top: 10px;
+    color: #FF312E;
 }
 
 .id h1{
@@ -21,7 +22,7 @@
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: #e89261;
+    background-color: #A2BCE0;
     font-family: "Gitaluevo";
     padding: 0;
 }
@@ -38,7 +39,7 @@ img{
     top: 0;
     right: 0;
     
-    background-image: linear-gradient(to right, #D31027,#ee465a);
+    background-color:#FF312E;
     height: 25%;
     display: grid;
     /*grid has two columns*/
@@ -89,7 +90,7 @@ img{
 .menu h1{
     font-size: 4vw;
     margin-top: 10px;
-    background-image: linear-gradient(to bottom left, #553c9a, #ee4b2b);
+    background-color:#703D57;
     background-clip: text; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -119,6 +120,7 @@ img{
     display: flex;
     align-items: center;
     flex-direction: column;
+    color: #FF312E;
 }
 
 .experience{

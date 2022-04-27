@@ -291,12 +291,81 @@ img{
 }
 
 
+.links{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links .icons{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 1fr;
+}
+
+.links .icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
 .icons{
     margin-bottom: 5%;
 }
 
 .hover_image{
     margin-left:20px;
+}
+
+.hover-underline-animation{
+    background-image: 
+        linear-gradient(
+            transparent 0%,
+            transparent 89%,
+            white 89%,
+            white 90%,
+            white 91%,
+            transparent 91%,
+            transparent 100%
+        );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+.hover-underline-animation:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.icons.bar .hover-underline-animation{
+    background-image: 
+        linear-gradient(
+            transparent 0%,
+            transparent 74%,
+            white 74%,
+            white 75%,
+            white 76%,
+            transparent 76%,
+            transparent 100%
+        );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+.icons.bar .hover-underline-animation:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
 }
 
 .hover_image:hover {
@@ -353,7 +422,7 @@ img{
         flex-direction: column;
         align-items: center;
         /*put the div in the middle of the screen*/
-        margin-top: 20%;
+        margin-top: 30%;
         margin-left: 50%;
         transform: translate(-50%, -50%);
     }

@@ -10,12 +10,14 @@
     height: 20%;
     margin-top: 10px;
     color: #FF312E;
+    
 }
 
 .id h1{
     text-align: left;
     margin-right: 30px;
     font-size: 2.5vw;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 
@@ -121,6 +123,7 @@ img{
     align-items: center;
     flex-direction: column;
     color: #FF312E;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 .experience{
@@ -196,7 +199,7 @@ img{
 
 .container span{
     font-size: 1.3vw;
-    margin-right: 10%;
+    margin-right: 0%;
     /*center vertically the text*/
     display: flex;
     justify-content: center;
@@ -306,11 +309,16 @@ img{
 .hover_image:hover img:nth-child(2){display:inline-block}
 .langues .hover_image:hover .skill{background-color: #D31027}
 
-
+.informations-phone {
+    display: none;
+}
 
 
 /*adapting font size and img size to the screen size*/
 @media screen and (max-width: 1000px) {
+    .informations{
+        display:none;
+    }
 
     .title{
         /*putting it on top right corner*/
@@ -330,11 +338,12 @@ img{
 
     }
 
-    .informations p{
+    .informations-phone p{
         font-size: 4.5vw;
     }
 
-    .informations{
+    .informations-phone{
+        display: block;
         width: 45%;
         height: 20%;
         background: none;
@@ -344,18 +353,18 @@ img{
         flex-direction: column;
         align-items: center;
         /*put the div in the middle of the screen*/
-        margin-top: 40%;
+        margin-top: 20%;
         margin-left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    .informations img{
+    .informations-phone img{
         width: 7vw;
         height: 7vw;
     }
 
     .menu{
-        margin-top: -20%;
+        margin-top: 10%;
         /*center the menu*/
         margin-left: 50%;
         transform: translate(-51%, 0%);

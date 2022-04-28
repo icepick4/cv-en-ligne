@@ -368,6 +368,11 @@ img{
     background-position-x: left;
 }
 
+.links a:hover{
+    /*clickable effect*/
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 .hover_image:hover {
     text-decoration: none
 }
